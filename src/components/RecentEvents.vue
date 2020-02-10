@@ -17,8 +17,8 @@
                         <span>Speakers</span>
                         <!-- use a vfor loop, to decongest this page. -->
                         <v-list-item class="grow">
-                            <v-list-item-avatar color="blue darken-6">
-                                <v-img class="elevation-6" src="../assets/GDGBanner.jpeg"
+                            <v-list-item-avatar v-for="(speaker, index) in speakers" :key="index" :color="speaker.color+' darken-6'">
+                                <v-img @click="showImg(speaker.color)" class="elevation-6" :src="speaker.img"
                                 ></v-img>
                             </v-list-item-avatar>
 
@@ -33,7 +33,7 @@
                                 ></v-img>
                             </v-list-item-avatar> 
 
-                            <v-list-item-avatar color="teal darken-1">
+                            <v-list-item-avatar color="blue darken-1">
                                 <v-img class="elevation-6" src="../assets/img/speakers/My avatar.png"
                                 ></v-img>
                             </v-list-item-avatar>
@@ -67,12 +67,24 @@
             
         </v-row>
         
-        <div align="center" justify="center" class="mb-4">
-            <v-btn rounded color="primary">
-                Event History
-                <v-icon>mdi-code-braces</v-icon>
+       <!--  <div align="center" justify="center" class="mb-4">
+            <v-btn rounded color="primary" @click="loadMore = !loadMore">
+                Load more
+                <v-icon> {{loadMore? "mdi-arrange-bring-forward" : "mdi-arrange-send-backward"}}  </v-icon> 
             </v-btn>
-        </div>
+        </div> -->
+
+        <!-- For modal dialogs -->
+      <v-dialog  v-model="speakerImg" max-width="500px" >
+        <v-card>
+           <v-img
+            :src="speakerImg"
+            height="auto"
+            ></v-img>
+        </v-card>
+      </v-dialog>
+
+      <!-- <img :src="team.img" @click="showImg(team.img)"> -->
     </div>
 </template>
 
@@ -80,6 +92,22 @@
   export default {
     data: () => ({
       show: false,
+      loadMore: false,
+      speakerImg: '',
+      speakers: [
+          {img: '../assets/GDGBanner.jpeg',color: 'red'},
+          {img: '../assets/img/speakers/Chime.jpeg',color: 'green'},
+          {img: '../assets/img/speakers/Queen.jpeg',color: 'yellow'},
+          {img: '../assets/img/speakers/My avatar.png',color: 'blue'},
+      ]
     }),
+    methods: {
+        showImg: function(src){
+            const _ = this;
+            alert('The color is: '+ src)
+            _.speakerImg = src;
+            _.speakerImg = true;
+        }
+    },
   }
 </script>

@@ -11,10 +11,13 @@
     <!-- This section is for upcomming events -->
     <!-- This section is for Recent events -->
     <RecentEvents/>
-    <!-- This section is for Recent events -->
-    <!-- This section is for Testimony events -->
-    <Testimony/>
-    <!-- This section is for Testimony events -->
+    <div align="center" justify="center" class="mb-4">
+        <v-btn rounded color="primary" to="/events">
+            Event History
+            <v-icon>mdi-code-braces</v-icon>
+        </v-btn>
+    </div>
+    <!-- This section is for Recent events --> 
     <!-- This section is for Sponsors events -->
     <Sponsors/>
     <!-- This section is for Sponsors events -->
@@ -30,8 +33,7 @@
 // @ is an alias to /src 
 import Slide  from '@/components/Slide.vue'
 import UpcomingEvents  from '@/components/UpcomingEvents.vue'
-import RecentEvents  from '@/components/RecentEvents.vue'
-import Testimony  from '@/components/Testimony.vue'
+import RecentEvents  from '@/components/RecentEvents.vue' 
 import Sponsors  from '@/components/Sponsors.vue'
 
 export default {
@@ -39,8 +41,7 @@ export default {
   components: { 
     Slide,
     UpcomingEvents,
-    RecentEvents,
-    Testimony,
+    RecentEvents, 
     Sponsors,
   }
 }
