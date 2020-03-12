@@ -10,6 +10,9 @@ import adminAuth from '../views/Admin/Auth.vue'
 import adminDashboard from '../views/Admin/views/dashboard.vue'
 import AddEvents from '../views/Admin/views/AddEvents.vue'
 import EventHistory from '../views/Admin/views/EventHistory.vue'
+import adminTeam from '../views/Admin/views/team.vue'
+import adminMessage from '../views/Admin/views/message.vue'
+import adminProfile from '../views/Admin/views/profile.vue'
 
 // importing the layouts
 import admin from '../layouts/admin'
@@ -77,7 +80,25 @@ const routes = [
     name: 'eventHistory',
     meta: {layout: 'admin'},
     component: EventHistory
-  }
+  },
+  {
+    path: '/Admin/views/team',
+    name: 'Admin Team Edit',
+    meta: {layout: 'admin'},
+    component: adminTeam
+  },
+  {
+    path: '/Admin/views/message',
+    name: 'Admin View Messages',
+    meta: {layout: 'admin'},
+    component: adminMessage
+  },
+  {
+    path: '/Admin/views/profile',
+    name: 'Admin Profile',
+    meta: {layout: 'admin'},
+    component: adminProfile
+  },
 ]
 
 const router = new VueRouter({

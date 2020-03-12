@@ -4,7 +4,7 @@
            <v-row> 
                <!-- This is for Recent Event Table -->
                <v-col cols="12"> 
-                   <EventTable/>
+                   <messageTable/>
                </v-col>
                <!-- This is for Recent Event Table -->
            </v-row>
@@ -13,11 +13,11 @@
 </template>
 
 <script>
-import EventTable from '@/components/EventHistory' 
+import messageTable from '@/components/MessageTable' 
 export default {
     name: 'eventHistory',
     components: {
-        EventTable, 
+        messageTable, 
     }
 }
 </script>

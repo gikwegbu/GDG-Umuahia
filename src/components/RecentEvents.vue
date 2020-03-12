@@ -22,21 +22,7 @@
                                 ></v-img>
                             </v-list-item-avatar>
 
-                            <v-list-item-avatar color="teal darken-2">
-                                <v-img
-                                    class="elevation-6"  src="../assets/img/speakers/Chime.jpeg"
-                                ></v-img>
-                            </v-list-item-avatar>.
-
-                            <v-list-item-avatar color="yellow darken-1">
-                                <v-img class="elevation-6" src="../assets/img/speakers/Queen.jpeg"
-                                ></v-img>
-                            </v-list-item-avatar> 
-
-                            <v-list-item-avatar color="blue darken-1">
-                                <v-img class="elevation-6" src="../assets/img/speakers/My avatar.png"
-                                ></v-img>
-                            </v-list-item-avatar>
+                            
                         </v-list-item>
                         Ikwegbu George, Mezie, Ugo Queen
                     </v-card-subtitle>
@@ -95,16 +81,15 @@
       loadMore: false,
       speakerImg: '',
       speakers: [
-          {img: '../assets/GDGBanner.jpeg',color: 'red'},
-          {img: '../assets/img/speakers/Chime.jpeg',color: 'green'},
-          {img: '../assets/img/speakers/Queen.jpeg',color: 'yellow'},
-          {img: '../assets/img/speakers/My avatar.png',color: 'blue'},
+          {img: require('../assets/GDGBanner.jpeg'),color: 'red'},
+          {img: require('../assets/img/speakers/Chime.jpeg'),color: 'green'},
+          {img: require('../assets/img/speakers/Queen.jpeg'),color: 'yellow'},
+          {img: require('../assets/img/speakers/My avatar.png'),color: 'blue'},
       ]
     }),
     methods: {
         showImg: function(src){
-            const _ = this;
-            alert('The color is: '+ src)
+            const _ = this; 
             _.speakerImg = src;
             _.speakerImg = true;
         }

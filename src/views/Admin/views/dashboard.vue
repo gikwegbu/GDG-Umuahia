@@ -16,26 +16,12 @@
 </template>
 
 
-<script>
+<script> 
+
 export default {
-    name: 'dashboard',
+    name: 'dashboard', 
     data: ()=>({
         blink: false,
-    }),
-    created(){ 
-        this.blinkCursor()
-        
-    },
-    methods: {
-        blinkCursor: function(){
-            // alert('dfadsfsa')
-            // if (1==1) {
-            //     setInterval(() => { 
-            //      this.blink = !this.blink
-            //     }, 5000);
-            //     this.blinkCursor()
-            // } 
-        }
-    },
+    }), 
 }
 </script>

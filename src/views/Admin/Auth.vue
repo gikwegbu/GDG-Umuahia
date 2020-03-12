@@ -24,7 +24,7 @@
             <v-card-actions>
             <v-spacer></v-spacer> 
             <!-- <v-btn color="blue darken-1" block rounded dark type="submit">Login</v-btn> -->
-             <v-btn   :loading="loginBtn"  color="blue darken-1" block rounded dark type="submit"  >
+             <v-btn   :loading="loginBtn" :disabled="loginBtn" class="white--text" color="blue darken-1" block rounded  type="submit"  >
                 Login
                 <template v-slot:loader>
                     <span class="custom-loader">

@@ -101,9 +101,12 @@
 </style>
 
 <script> 
+import { mapActions  } from 'vuex' 
+
 
 
 export default {
+
     components: { 
     }, 
     data: () => ({ 
@@ -113,9 +116,16 @@ export default {
         { icon: 'mdi-code-braces', color: 'yellow darken-1', link: '/admin/views/addevents', title: 'Events'},
         { icon: 'mdi-share', color: 'blue', link: '/admin/views/eventhistory', title: 'Event History'},
         { icon: 'mdi-account-group-outline', color: 'red darken-4', link: '/admin/views/team', title: 'Team'},
-        { icon: 'mdi-account-convert', color: 'teal', link: '/admin/views/contact', title: 'Contact'},
+        { icon: 'mdi-android-messages', color: 'teal', link: '/admin/views/message', title: 'Message'},
+        { icon: 'mdi-account-badge-horizontal', color: 'grey', link: '/admin/views/profile', title: 'Profile'},
       ]
     }),
-    methods: {},
+     mounted(){  
+        this.Load_Events()  
+
+    },
+    methods: {
+        ...mapActions(["Load_Events"]), 
+    },
   }
 </script>

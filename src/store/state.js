@@ -1,32 +1,109 @@
 export default {
-    newEvent : 
-    [
+    newEvent : [],
+    // newEvent : 
+    // [
+    //   {
+    //     id: 'ieucvuihuke',
+    //     name: 'Get Together',
+    //     phrase: 'Parte after parte', 
+    //     date: '2019-08-24',
+    //     venue: 'Ójukwu Bunker',
+    //     speakername: 4.0, 
+    //     eventImage: require('@/assets/img/Leads/George.jpg')
+    //   },
+    //   {
+    //     id: 'eqweradvxcx',
+    //     name: ' I/O Extended \'19',
+    //     phrase: 'Hello Google',
+    //     date: '2019-02-20',
+    //     venue: 'Ever Green Hotels',
+    //     speakername: 'Daniel Lucky, Chime, John Idogun, George, Queen',  
+    //     eventImage: require('@/assets/img/Leads/Queen.jpeg')
+    //   },
+    //   {
+    //     id: 'qwervcvsdfgh',
+    //     name: 'I/O Extended \'18',
+    //     phrase: "Learning new Google Tools",
+    //     date: '2018-10-18',
+    //     venue: 'Abia Hotels',
+    //     speakername: 'Lusac, Austin, Chime',   
+    //     eventImage: require('@/assets/img/Leads/Chime.jpeg')
+    //   }, 
+    // ],
+    team : 
+      [
         {
-          name: 'Get Together',
-          phrase: 'Parte after parte',
-          date: '2019 December',
-          venue: 'Ójukwu Bunker',
-          speakerName: 4.0,
-          speakerImage: null,
-          eventImage: null
+          id: 'dghdghbxcvbxcv',
+          name: 'John Idogun',
+          stack: 'Game Developer', 
+          position: ' Lead', 
+          quote: 'Work Hard or Go Home',
+          facebook: 'idogunj',
+          whatsapp: '+2348157813631',
+          twitter: '@johneh_official',
+          img: require('@/assets/img/Leads/John.jpg'),
+          medium: '',
         },
         {
-          name: 'Google I/O Extended 2019',
-          phrase: 'Hello Google',
-          date: '2019 july',
-          venue: 'Ever Green Hotels',
-          speakerName: 'Daniel Lucky, Chime, John Idogun, George, Queen', 
-          speakerImage: null,
-          eventImage: null
-        },
-        {
-          name: 'Google I/O Extended 2018',
-          phrase: "Learning new Google Tools",
-          date: '18th July 2018',
-          venue: 'Abia Hotels',
-          speakerName: 'Lusac, Austin, Chime',  
-          speakerImage: null,
-          eventImage: null
+          id: '45234fgdfdfgsd',
+          name: 'Irozuru Emmanuel Chime',
+          stack: 'Manager, ECR', 
+          position: ' Co-Lead',
+          quote: 'Work Hard or Go Home',
+          facebook: 'emmy.xk', 
+          whatsapp: '+2348062159230',
+          twitter: '@i_mezie',
+          img: require('@/assets/img/Leads/Chime.jpeg'),
+          medium: '',
         }, 
-    ]
+        {
+          id: 'xbcvfdtwert',
+          name: 'Ugonna Queen Oleh',
+          stack: 'Co-Founder Royal Rhetorics', 
+          position: ' Co-Lead',
+          quote: 'Work Hard or Go Home',
+          facebook: 'queenugonna.oleh', 
+          whatsapp: '+2348133420000',
+          twitter: '@Ug_darlin',
+          img: require('@/assets/img/Leads/Queen.jpeg'),
+          medium: '',
+        },
+        {
+          id: 'kghoiuiyityhrt',
+          name: 'Akumobi Kingsley',
+          stack: ' Manager, HUB7',   
+          position: ' Co-Lead',
+          quote: 'Simplicity is the ultimate Sophistication',
+          facebook: 'kingdonchy',
+          whatsapp: '+2347084079097',
+          twitter: '@akumobikingsley',
+          img: "https://pbs.twimg.com/media/D-QqElJWsAAcm45.jpg",
+          medium: '',
+        },
+        {
+          id: '3456hjfgsdfgwert',
+          name: 'Daniel Lucky',
+          stack: 'CEO Softicu | Co-Founder PlanetHost',
+          position: ' Co-Lead',
+          quote: 'Work Hard or Go Home',
+          facebook: 'Nwaogbolucky',
+          whatsapp: '+2347030657848',
+          twitter: '@sirnwaogbolucky', 
+          img: require('@/assets/img/Leads/Lucky.jpg'),
+          medium: '',
+        },
+        {
+          id: 'dfcvxbchrtey',
+          name: 'George Ikwegbu',
+          stack: 'CEO George Delivery Service',
+          position: ' Co-Lead',
+          quote: 'Written Hello World? Congrats, you\'re a Programmer',
+          facebook: 'gikwegbu', 
+          whatsapp: '+2348101570258',
+          twitter: '@g.ikwegbu',
+          img: require('@/assets/img/Leads/George.jpg'),
+          medium: '@g.ikwegbu',
+        },
+          
+      ],
 }
