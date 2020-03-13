@@ -177,7 +177,8 @@ import 'firebase/storage';
     },
     methods: {
       ...mapActions([
-        'Update_Events'
+        'Update_Events',
+        'Add_Event'
       ]),
       action: function(action, id){
         const _ = this; 
@@ -274,6 +275,14 @@ import 'firebase/storage';
                  })
                  // Updating the image url with the new value in the database. 
                 return downloadURL;
+              })
+              .then( () => {
+                // Sending the doc id and image url to the state, to change it
+                const details = {
+                  id: id,
+                  imgUrl: imgUrl
+                }
+                _.Add_Event(details)
               })
               .catch((e)=>{
                 console.log("An Error Occured: ",+' '+ e)

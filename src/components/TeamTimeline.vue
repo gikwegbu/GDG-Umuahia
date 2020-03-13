@@ -116,7 +116,7 @@ export default {
                 socialMedia: { facebook: 'www.facebook.com/queenugonna.oleh', twitter: 'www.twitter.com/Ug_darlin', medium: '', whatsapp: '+2348133420000' }
             },
             {
-                name: 'Akumobi Kingsley', position: 'GDG Umuahia Co-Lead', business: ' Manager, HUB7', quote: 'Simplicity is the ultimate Sophistication', img: "https://pbs.twimg.com/media/D-QqElJWsAAcm45.jpg",
+                name: 'Akumobi Kingsley', position: 'GDG Umuahia Co-Lead', business: ' Manager, HUB7', quote: 'Simplicity is the ultimate Sophistication', img: require('@/assets/img/Leads/Kingsley.jpg'),
                 socialMedia: { facebook: 'www.facebook.com/kingdonchy', twitter: 'www.twitter.com/akumobikingsley', medium: '', whatsapp: '+2347084079097' }
             },
             {

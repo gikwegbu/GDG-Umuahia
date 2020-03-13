@@ -1,7 +1,7 @@
 import db from '@/fb'
 
 export default{
-    Add_Event( {commit}, event ){
+    Add_Event( {commit}, event ){ 
         commit("Add_Event", event)
     },
     Load_Events( {commit}, loadedEvents  ){
